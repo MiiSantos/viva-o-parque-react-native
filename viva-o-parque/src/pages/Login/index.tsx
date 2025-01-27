@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, Touchable, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
 
 export default function Login() {
   return (
     <View style={styles.container}>
-      <Image source={require('../../assets/logotipo.png')}
+      <Image source={require('../../assets/logos/logotipo.png')}
         style={styles.logo}
       />
       <Text style={styles.titulo}>Bem vindo(a)!</Text>
