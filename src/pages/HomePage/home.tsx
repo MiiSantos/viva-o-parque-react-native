@@ -1,10 +1,11 @@
 import React from 'react';
 import { Text, View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Events from '../../components/Events/events';
+import Events from '../../components/events/events';
 import posts from '../../mocks/posts';
+// ScrollView
 
-export default function HomePage() {
+export default function HomePage(props) {
     return (
         <SafeAreaView>
             <View style={styles.container}>
@@ -12,7 +13,7 @@ export default function HomePage() {
                     style={styles.logo}
                 />
                 <Text style={styles.logoText}>VIVA O PARQUE!</Text>
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate("login")}>
                     <Text style={styles.buttonText}>
                         Login
                     </Text>

@@ -1,6 +1,8 @@
-# Welcome to your Expo app 👋
+# Viva o parque App! 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esse é um projeto acadêmico, que tem a proposta de criar um aplicação
+que traga benefícios para a comunidade.
+Abaixo tutorial de como rodar o projeto, que foi criado com Expo e React Native.
 
 ## Get started
 
