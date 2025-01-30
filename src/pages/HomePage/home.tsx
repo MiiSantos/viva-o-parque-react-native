@@ -1,14 +1,13 @@
 import React from 'react';
-import { Text, View, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { Text, View, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import Events from '../../components/events/events';
 import posts from '../../mocks/posts';
-// ScrollView
+import Textbox from '../../components/textbox/textbox';
 
 export default function HomePage(props) {
     return (
-        <SafeAreaView>
-            <View style={styles.container}>
+        <View>
+            <View style={styles.header}>
                 <Image source={require('../../assets/logos/logotipo.png')}
                     style={styles.logo}
                 />
@@ -19,17 +18,32 @@ export default function HomePage(props) {
                     </Text>
                 </TouchableOpacity>
             </View>
-            <Events dados={posts} />
-        </SafeAreaView>
+        <ScrollView>
+            <View style={styles.container}>
+                <Image source={require('../../assets/logos/search.png')} style={styles.searchLogo} />
+                <Textbox placeholder="Busque um evento." />
+            </View>
+            <View style={styles.container}>
+                <Events dados={posts} />
+            </View>
+        </ScrollView>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
+    header: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingTop: 40,
+        padding: 10,
+        backgroundColor: '#669966',
+    },
     container: {
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
-        margin: 10,
+        marginTop: 10,
     },
     logo: {
         width: 30,
@@ -39,13 +53,18 @@ const styles = StyleSheet.create({
     logoText: {
         marginLeft: 5,
         fontWeight: 'bold',
-        color: '#669966',
+        color: 'white',
+    },
+    searchLogo: {
+        width: 25,
+        height: 25,
+        marginLeft: 5,
     },
     button: {
         backgroundColor: '#669966',
         width: 80,
         height: 30,
-        borderRadius: 50,
+        borderRadius: 10,
         justifyContent: 'center',
         marginLeft: 'auto',
     },
