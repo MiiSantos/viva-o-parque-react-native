@@ -1,8 +1,10 @@
 # Viva o parque App! 👋
 
-Esse é um projeto acadêmico, que tem a proposta de criar um aplicação
-que traga benefícios para a comunidade.
-Abaixo tutorial de como rodar o projeto, que foi criado com Expo e React Native.
+Esse é um projeto acadêmico, que tem a proposta de criar um aplicação que traga benefícios para a comunidade.
+O aplicativo móvel é uma plataforma digital que conecta pessoas e eventos em parques que visa fortalecer a comunidade local, 
+facilitando a descoberta de atividades e promovendo a interação entre a comunidade.
+
+Abaixo segue um tutorial de como rodar o projeto, que foi criado com Expo e React Native.
 
 ## Get started
 
