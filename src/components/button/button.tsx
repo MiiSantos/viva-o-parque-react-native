@@ -13,7 +13,7 @@ function Button(props) {
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#669966',
+        backgroundColor: '#88cc00',
         borderRadius: 6,
         width: 300,
         height: 50,

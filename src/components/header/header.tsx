@@ -3,7 +3,7 @@ import { Text, Image, StyleSheet } from 'react-native';
 
 function Header(props) {
     return <>
-        <Image source={require('../../assets/logos/logotipo.png')}
+        <Image source={require('../../assets/logos/plant.png')}
                 style={styles.logo}
               />
         <Text style={styles.title}>{props.title}</Text>

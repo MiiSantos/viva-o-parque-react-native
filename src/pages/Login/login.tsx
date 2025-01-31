@@ -32,7 +32,7 @@ export default function Login(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#669966',
+    backgroundColor: '#88cc00',
     alignItems: 'center',
     justifyContent: 'center',
   },

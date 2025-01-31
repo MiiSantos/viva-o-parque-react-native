@@ -8,13 +8,13 @@ export default function HomePage(props) {
     return (
         <View>
             <View style={styles.header}>
-                <Image source={require('../../assets/logos/logotipo.png')}
+                <Image source={require('../../assets/logos/plant.png')}
                     style={styles.logo}
                 />
                 <Text style={styles.logoText}>VIVA O PARQUE!</Text>
                 <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate("login")}>
                     <Text style={styles.buttonText}>
-                        Login
+                        Criar Evento
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingTop: 40,
         padding: 10,
-        backgroundColor: '#669966',
+        backgroundColor: '#88cc00',
     },
     container: {
         flex: 1,
@@ -61,10 +61,10 @@ const styles = StyleSheet.create({
         marginLeft: 5,
     },
     button: {
-        backgroundColor: '#669966',
-        width: 80,
+        backgroundColor: '#88cc00',
+        width: 100,
         height: 30,
-        borderRadius: 10,
+        borderRadius: 20,
         justifyContent: 'center',
         marginLeft: 'auto',
     },
